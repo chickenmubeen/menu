@@ -1,0 +1,336 @@
+/* تنسيقات عامة للصفحة */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e6d2;
+    text-align: center;
+    font-family: Cairo;
+}
+
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تنسيقات أزرار الصفحة الرئيسية */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    animation: fadeInUp 1s ease-in-out;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button {
+    background-color: #df3737;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #d2c1a3;
+    transform: translateY(-5px);
+}
+
+/* تنسيقات صفحة الأطباق (dish1.html) */
+.dish-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.dish {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.details-button {
+    background-color: #ce3333;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.details-button:hover {
+    background-color: #220d67;
+    transform: scale(1.05);
+}
+
+/* تنسيقات الأزرار العامة (رجوع، قائمة) */
+.back-button, .menu-button {
+    background-color: #ce3333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.back-button:hover, .menu-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.menu-button {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* تنسيقات صفحة تفاصيل الطبق */
+.dish-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.main-image {
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dish-details-page img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* تنسيقات أيقونات التواصل الاجتماعي */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-icon {
+    display: inline-block;
+    background-color: #f0e6d2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+.social-icon img {
+    max-width: 25px;
+    height: auto;
+}
+
+/* تنسيقات حقوق النشر */
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* تنسيقات النافذة المنبثقة لتكبير الصور */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+/* تنسيقات التذييل (سياسة الخصوصية، شروط الاستخدام، من نحن) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.footer-links a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: #777;
+    margin: 0 5px;
+    font-size: 0.9em;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 480px) {
+    .buttons {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .button {
+        padding: 12px 18px;
+        font-size: 0.9em;
+    }
+
+    .footer-links a {
+        margin: 0 5px;
+    }
+}
